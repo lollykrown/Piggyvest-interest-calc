@@ -8,9 +8,6 @@ document.querySelector('button').addEventListener("click", ()=>{
   const totalElem = document.getElementById('total') ;
   const duration =  document.getElementById('duration').value;
   let savingsElem = document.getElementById('savings').value;
-  if (isNaN(savingsElem)) {
-    savingsElem = 0
-  }
 
   let savings = parseFloat(savingsElem);
   interestRatePerDay = 0.1/365;

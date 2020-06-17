@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap");
+body {
+  font-family: 'Baloo Thambi 2', cursive;
+  padding: 0;
+  margin: 0;
+}
+
+h2, h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.signup-container {
+  background-color: #062863;
+  background-image: url("../images/1.png"), url("../images/2.png"), url("../images/3.png"), url("../images/last.png");
+  background-repeat: no-repeat;
+  background-position: top -120px left -80px,
+ top -90px right -120px,
+ bottom -90px left -120px,
+ bottom -80px right -120px;
+  background-attachment: fixed;
+}
+
+.signup-container .signup-contents {
+  max-width: 28rem;
+  margin: auto;
+  padding: 48px 0;
+}
+
+@media screen and (max-width: 510px) {
+  .signup-container .signup-contents {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.signup-container .signup-contents .signup-img {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.signup-container .signup-contents form {
+  background-color: white;
+  padding: 40px 40px 48px;
+  margin-top: 40px;
+  border-radius: 1.25rem;
+  border-bottom-left-radius: 0;
+}
+
+.signup-container .signup-contents form .form-text {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.signup-container .signup-contents form .form-text h2 {
+  font-size: 24px;
+  color: #083E9E;
+}
+
+.signup-container .signup-contents form .form-text p {
+  font-size: 14px;
+  color: #4A5568;
+}
+
+.signup-container .signup-contents form .form-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 32px;
+}
+
+.signup-container .signup-contents form .form-input label {
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  text-transform: capitalize;
+}
+
+.signup-container .signup-contents form .form-input input {
+  outline: none;
+  padding: 16px;
+  font-size: 100%;
+  border: none;
+  border-radius: .25rem;
+  background-color: #edf2f7;
+}
+
+.signup-container .signup-contents form .form-input .select-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.signup-container .signup-contents form .form-input .select-box .selected {
+  background-color: #edf2f7;
+  border-radius: .25rem;
+  position: relative;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  padding: 16px;
+  margin-bottom: 10px;
+}
+
+.signup-container .signup-contents form .form-input .select-box .selected::after {
+  content: "";
+  background: url("../images/arrow_down-512.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100%;
+  width: 32px;
+  right: 10px;
+  top: 13px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.signup-container .signup-contents form .form-input .select-box .options-container {
+  background-color: #edf2f7;
+  max-height: 0;
+  opacity: 0;
+  width: 100%;
+  border-radius: .25rem;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  overflow: hidden;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.signup-container .signup-contents form .form-input .select-box .options-container.active {
+  max-height: 240px;
+  opacity: 1;
+  overflow-y: scroll;
+}
+
+.signup-container .signup-contents form .form-input .select-box .options-container.active + .selected::after {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+  top: -13px;
+}
+
+.signup-container .signup-contents form .form-input .select-box .options-container::-webkit-scrollbar {
+  width: 8px;
+  background-color: #edf2f7;
+}
+
+.signup-container .signup-contents form .form-input .select-box .options-container::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1;
+}
+
+.signup-container .signup-contents form .form-input .select-box .options-container .selected,
+.signup-container .signup-contents form .form-input .select-box .options-container .option {
+  padding: 16px;
+  cursor: pointer;
+}
+
+.signup-container .signup-contents form .form-input .select-box .options-container .selected .radio,
+.signup-container .signup-contents form .form-input .select-box .options-container .option .radio {
+  display: none;
+}
+
+.signup-container .signup-contents form .form-input .select-box .options-container .selected .label,
+.signup-container .signup-contents form .form-input .select-box .options-container .option .label {
+  cursor: pointer;
+}
+
+.signup-container .signup-contents form button {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 25px 40px;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 1.25rem;
+  border-bottom-left-radius: 0;
+  background-color: #083E9E;
+  cursor: pointer;
+}
+
+.signup-container .signup-contents .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.signup-container .signup-contents a {
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  margin-top: 32px;
+}
+/* #results{
+  visibility: hidden;
+} */

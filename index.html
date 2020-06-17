@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="images/piggybank-NEW-Alone-80-min.webp" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PiggyVest Interest Calculator</title>
+    <link href="styles/main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <section class="signup-container">
+        <div class="signup-contents">
+            <div class="signup-img">
+                <img src="images/piggyvest-logo.0b78a8fa.svg" alt="PiggVest Logo" />
+            </div>
+            <form>
+                <div class="form-text">
+                    <h2>Calculate your interest</h2>
+                    <p>Interest rate is pegged at 10% per annum which is Piggybank's interest rate and it's calculated
+                        per day</p>
+                </div>
+
+                <div class="form-input">
+                    <label for="savings">Savings</label>
+                    <input type="text" id="savings" placeholder="Amount you want to calculate its interest" />
+                </div>
+
+                <div class="form-input">
+                    <label for="duration">Duration in days <span>(1 month is 30, 1 yr is 365)</span></label>
+                    <input type="number" id="duration" placeholder="Duration in days e.g 30 " />
+                </div>
+                <button>calculate interest</button>
+            </form>
+            <form id="results">
+                <div class="form-text" id="results">
+                    <p id="daily"></p>
+                    <h4 id="interest"></h4>
+                    <h2 id="total"></h2>
+                </div>
+            </form>
+            <a href="https://github.com/lollykrown">lollykrown </a>
+        </div>
+    </section>
+
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>

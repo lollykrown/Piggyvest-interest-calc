@@ -8,7 +8,7 @@ document.querySelector('button').addEventListener("click", ()=>{
   const totalElem = document.getElementById('total') ;
   const duration =  document.getElementById('duration').value;
   let savingsElem = document.getElementById('savings').value;
-  if (savingsElem === 'NaN') {
+  if (isNaN(savingsElem)) {
     savingsElem = 0
   }
 

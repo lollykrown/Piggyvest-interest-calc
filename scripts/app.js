@@ -18,8 +18,10 @@ document.querySelector('button').addEventListener("click", ()=>{
 
   let total = (savings + interest).toFixed(2);
   console.log(total)
+  const naira = `&#x20A6`;
+  console.log(naira)
 
   dailyElem.innerText = `Daily Interest: ${dailyInterest.toFixed(2)}`;
   interestElem.innerText = `Interest for ${duration} days: ${interest.toFixed(2)}`;
-  totalElem.innerText = `Total of savings plus interest earned:  ${total}`;
+  totalElem.innerText = `Total of savings plus interest earned: ${total}`;
 })
